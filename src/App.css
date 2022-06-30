@@ -1,3 +1,20 @@
-ul li {
-  list-style-type: georgian;
+.container {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 20% 80%;
+}
+
+.header {
+    background-color: antiquewhite;
+    grid-area: h;
+}
+
+.nav {
+    background-color: cadetblue;
+    grid-area: n;
+}
+
+.content {
+    background-color: coral;
+    grid-area: c;
 }
