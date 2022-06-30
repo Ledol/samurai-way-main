@@ -1,20 +1,39 @@
-.container {
+.app-wrapper {
+    margin: 0 auto;
     display: grid;
-    grid-template-rows: 30% 70%;
-    grid-template-columns: 20% 80%;
+    width: 1300px ;
+    grid-template-areas:
+            'header header header'
+            'nav content content';
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
 }
 
 .header {
     background-color: antiquewhite;
-    grid-area: h;
+    grid-area: header;
+}
+
+header img {
+    width: 90px;
 }
 
 .nav {
     background-color: cadetblue;
-    grid-area: n;
+    grid-area: nav;
 }
 
 .content {
     background-color: coral;
-    grid-area: c;
+    grid-area: content;
+
+}
+.img-city {
+    width: 1070px;
+    height: 100px;
+}
+
+.img-logo {
+    width: 250px;
 }
