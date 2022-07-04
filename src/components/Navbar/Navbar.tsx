@@ -3,10 +3,10 @@ import style from './Navbar.module.css';
 
 export const Navbar = () => {
     return <nav className={style.nav}>
-        <div className={style.item}>
+        <div className={`${style.item} ${style.active}`}>
             <a>Profile</a>
         </div>
-        <div className={`${style.item} ${style.active}`}>
+        <div className={style.item}>
             <a>Message</a>
         </div>
         <div className={style.item}>

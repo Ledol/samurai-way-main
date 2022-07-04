@@ -3,7 +3,7 @@ import style from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
-    return <main className={style.content}>
+    return <div>
         <div>
             <img className={style.imgCity} src="http://www.eclatsvc.com.sg/wp-content/uploads/2017/05/city-2017-1000x200.jpg" alt=""/>
         </div>
@@ -14,7 +14,7 @@ const Profile = () => {
 
         </div>
         <MyPosts />
-    </main>
+    </div>
 
 };
 
