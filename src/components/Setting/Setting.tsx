@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Setting.module.css'
 
-const Setting = () => {
+function Setting () {
     return (
         <div>
          Setting

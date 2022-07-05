@@ -12,6 +12,7 @@ import Setting from "./components/Setting/Setting";
 
 
 function App() {
+
     return (
         <BrowserRouter>
             <div className='app-wrapper'>

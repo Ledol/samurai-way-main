@@ -2,6 +2,7 @@
 .content {
     background-color: coral;
     grid-area: content;
+    padding: 10px;
 
 }
 .imgCity {
