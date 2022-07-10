@@ -8,7 +8,6 @@ type PostType = {
     likesCount: string
 }
 
-
 type MyPostsPropsType = {
     posts: Array<PostType>
 }
@@ -26,7 +25,7 @@ const MyPosts = (props: MyPostsPropsType) => {
         <div>
             <button>Add post</button>
         </div>
-        { postsElement }
+        {postsElement}
     </div>
 
 };
