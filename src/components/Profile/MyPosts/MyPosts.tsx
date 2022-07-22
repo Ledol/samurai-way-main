@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './MyPosts.module.css';
-import Post from "./Post/Post";
-import {ProfilePageType} from "../../../Redux/State";
+import {Post} from "./Post/Post";
+import {ProfilePageType} from "../../../redux/State";
 
 
-const MyPosts = (props: ProfilePageType) => {
+export const MyPosts = (props: ProfilePageType) => {
 
     const postsElement = props.posts.map((p) => {
         return <Post id={p.id}  message={p.message}
@@ -20,5 +20,3 @@ const MyPosts = (props: ProfilePageType) => {
         {postsElement}
     </div>
 }
-
-export default MyPosts;

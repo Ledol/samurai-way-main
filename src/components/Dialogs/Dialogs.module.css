@@ -20,6 +20,12 @@
     padding: 10px;
 }
 
-.message {
+.dialog {
+    line-height: 60px;
 
+}
+
+.imgUser {
+    width: 40px;
+    border-radius: 20px;
 }

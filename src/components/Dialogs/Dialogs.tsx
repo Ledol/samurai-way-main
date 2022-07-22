@@ -2,13 +2,13 @@ import React from 'react';
 import s from './Dialogs.module.css'
 import {DialogItem} from "./DialogItem/DialogItem";
 import {Message} from "./Message/Message";
-import {DialogsPageType} from "../../Redux/State";
+import {DialogsPageType} from "../../redux/State";
 
 
 function Dialogs(props: DialogsPageType) {
 
     const dialogsElement = props.dialogs.map((d) => {
-        return <DialogItem name={d.name} id={d.id}/>
+        return <DialogItem name={d.name} id={d.id} image={d.image}/>
     })
 
     const messagesElement = props.messages.map((m) => {
@@ -19,7 +19,6 @@ function Dialogs(props: DialogsPageType) {
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
                 {dialogsElement}
-
             </div>
             <div className={s.messages}>
                 {messagesElement}
