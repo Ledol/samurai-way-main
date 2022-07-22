@@ -22,9 +22,9 @@ export const Navbar = () => {
         <div className={style.item}>
             <NavLink to='/Setting' activeClassName={style.activeLink}>Setting</NavLink>
         </div>
-        <div className={style.item}>
+        {/*<div className={style.item}>
             <NavLink to='/Friends' activeClassName={style.activeLink}>Friends</NavLink>
-        </div>
+        </div>*/}
     </nav>
 
 

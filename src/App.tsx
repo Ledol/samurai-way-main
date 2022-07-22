@@ -8,9 +8,9 @@ import {Route} from "react-router-dom";
 import Dialogs from "./components/Dialogs/Dialogs";
 import Music from "./components/Music/Music";
 import Friends from "./components/Friends/Friends";
-import {RootStateType} from "./redux/State";
+import {addMessage, RootStateType} from "./redux/State";
 import Setting from "./components/Setting/Setting";
-
+import {addPost} from "./redux/State";
 
 
 type AppType = {
@@ -27,11 +27,13 @@ export const App: FC<AppType> = (
             <Friends friends={sidebar.friends}/>
             <div className='app-wrapper-content'>
                 <Route path='/Profile' render={() => {
-                    return <Profile posts={profilePage.posts}/>
+                    return <Profile posts={profilePage.posts}
+                                    addPost={addPost}/>
                 }}/>
                 <Route path='/Dialogs' render={() => {
                     return <Dialogs dialogs={dialogsPage.dialogs}
-                                    messages={dialogsPage.messages}/>
+                                    messages={dialogsPage.messages}
+                                    addMessage={addMessage}/>
                 }}/>
                 <Route path='/News' component={News}/>
                 <Route path='/Music' component={Music}/>
